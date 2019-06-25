@@ -1,12 +1,13 @@
 #!/bin/bash
 SCRIPTS=$(dirname $0)
 {
-    $SCRIPTS/partition-usage.sh savio;
-    $SCRIPTS/partition-usage.sh savio2;
-    $SCRIPTS/partition-usage.sh savio2_1080ti;
-    $SCRIPTS/partition-usage.sh savio2_bigmem;
-    $SCRIPTS/partition-usage.sh savio2_gpu;
-    $SCRIPTS/partition-usage.sh savio2_htc;
-    $SCRIPTS/partition-usage.sh savio2_knl;
-    $SCRIPTS/partition-usage.sh savio2_bigmem;
+    $SCRIPTS/partition-usage.sh lr2;
+    $SCRIPTS/partition-usage.sh lr3;
+    $SCRIPTS/partition-usage.sh lr4;
+    $SCRIPTS/partition-usage.sh lr5;
+    $SCRIPTS/partition-usage.sh lr6;
+    $SCRIPTS/partition-usage.sh lr_bigmem;
+    $SCRIPTS/partition-usage.sh es1;
+    $SCRIPTS/partition-usage.sh cf1;
+    $SCRIPTS/partition-usage.sh cm1;
 } | awk '{ print "partition_usage," $0 }'
