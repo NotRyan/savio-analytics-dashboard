@@ -1,4 +1,4 @@
-hostname = '128.3.10.228'
+hostname = 'influx-test.lbl.gov'
 port = 8086
 table = 'cpu'
 password = ''
